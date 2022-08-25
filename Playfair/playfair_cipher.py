@@ -37,8 +37,8 @@ def playfair_cipher(keyword, plaintext, option=0):
             if i + 1 < len(list_message):
                 if list_message[i + 1] == list_message[i]:
                     new_message.append('x')
-            if (i + 1) % 2 == 0 and i + 1 == len(list_message):
-                new_message.append('x')
+        if len(new_message) % 2 == 1:
+            new_message.append('x')
         return new_message
 
     def encrypt_message(square, twos):
