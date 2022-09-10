@@ -128,15 +128,13 @@ def playfair_cipher(keyword, plaintext, option=0):
     elif option == 1:
         decrypt_message(newSquare, plaintext)
 
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print("Para encriptar su mensaje presione 0 \n para decifrar el mensaje presione 1")
     option = input()
     if option == '1':
         print("Ingrese la palabra clave (o frase sin espacios): ")
         keyword = input()
-        print("Ingrese el texto a cifrar: ")
+        print("Ingrese el texto a decifrar: ")
         plaintext = input()
         playfair_cipher(keyword, plaintext, 1)
     else:
